@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* main-1 color */
+    --text-color: #1e3045;
+    --desc-color: #4b596a;
+    --icon-color: #78838f;
+    --bg-color: #a5acb5;
+    --bg-2-color: #d2d6da;
+    /* maim-2 color white mood */
+    --text-2-color: #c3e0f3;
+    --desc-2-color: #cfe6f5;
+    --icon-2-color: #dbecf8;
+    --bg-2-color: #e7f3fa;
+    --bg-th-2-color: #f3f9fd;
+}
+
+body {
+    font-family: 'Lora', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: var(-);
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* container spasing */
+
+.container {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width: 991px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width: 767px) {
+    .container {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* container spasing */
+
+.content-wellcom-bage {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--bg-color);
+}
+
+.content-wellcom-bage .boxes {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--desc-2-color);
+    border-radius: 10px;
+    padding: 20px 10px;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media(max-width: 700px) {
+    .content-wellcom-bage .boxes {
+        padding: 0;
+    }
+}
+
+.content-wellcom-bage .boxes .box-wellcom_message {
+    margin-right: 100px;
+    margin-left: 50px;
+}
+
+@media(max-width: 700px) {
+    .content-wellcom-bage .boxes .box-wellcom_message {
+        margin: 0 50px;
+    }
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1e3045;
+    margin-bottom: 15px;
+}
+
+.title h4 {
+    font-size: 2rem;
+}
+
+.title img {
+    width: 60px;
+}
+
+.content-wellcom-bage .boxes .box-wellcom_message h3 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.content-wellcom-bage .boxes .box-wellcom_message .foot-desc {
+    width: 450px;
+    line-height: 1.5;
+    color: var(--desc-color);
+}
+
+@media(max-width: 600px) {
+    .content-wellcom-bage .boxes .box-wellcom_message :nth-child(3) {
+        width: 250px;
+    }
+}
+
+/* =================================  login  =================================*/
+
+.content-wellcom-bage .boxes .box_login {
+    margin: 50px;
+}
+
+.content-wellcom-bage .boxes .box_login form .title {
+    font-size: 40px;
+    color: var(--text-color);
+    margin-bottom: 18px;
+}
+
+.content-wellcom-bage .boxes .box_login form div {
+    padding-bottom: 10px;
+}
+
+.content-wellcom-bage .boxes .box_login form div label {
+    text-transform: capitalize;
+    margin-bottom: 0.3rem;
+    display: block;
+    font-weight: bold;
+}
+
+.content-wellcom-bage .boxes .box_login form div label {
+    margin-top: 0.5rem;
+}
+
+.content-wellcom-bage .boxes .box_login form div input {
+    outline: none;
+    padding: 8px 15px 8px 15px;
+    border-radius: 4px;
+    border: 1px solid var(--desc-color);
+    color: #78838f;
+    font-size: 19px;
+}
+
+.content-wellcom-bage .boxes .box_login form button {
+    padding: 12px 22px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--desc-color);
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.content-wellcom-bage .boxes .box_login form button::before,
+.content-wellcom-bage .boxes .box_login form button::after {
+    position: absolute;
+    content: '';
+    width: 106.82px;
+    height: 46.4px;
+    background: rgba(102, 51, 153, 0.259);
+    bottom: 0px;
+    right: 108px;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.content-wellcom-bage .boxes .box_login form button::after {
+    left: 108px;
+}
+
+.content-wellcom-bage .boxes .box_login form button:hover::after {
+    left: 0;
+}
+
+.content-wellcom-bage .boxes .box_login form button:hover::before {
+    right: 0px;
+}
+
+.content-wellcom-bage .boxes .box_login form .guest {
+    display: block;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content-wellcom-bage .boxes .box_login form .guest:hover {
+    text-decoration: underline;
+    color: var(--icon-color);
+}
+
+/* =========== end wellcom sites =========== */
+
+
+/* =========== start navgation bar =========== */
+header nav {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+}
+
+header .nav-links {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+header .nav-links .brand {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+header .nav-links a {
+    color: var(--desc-color);
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+header .nav-links a:hover {
+    color: var(--text-2-color);
+}
+
+header .nav-order input {
+    width: 500px;
+    height: 30px;
+    margin-right: 20px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 8px;
+    font-size: 15px;
+    background-color: var(--bg-2-color)
+}
+
+header .nav-order .bell,
+header .nav-order .car {
+    color: var(--icon-2-color);
+    margin-right: 15px;
+    font-size: 18px;
+    position: relative;
+}
+
+header .nav-order .bell::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    top: -7px;
+    left: 8px;
+    cursor: pointer;
+}
+
+
+/* =========== end navgation bar =========== */
