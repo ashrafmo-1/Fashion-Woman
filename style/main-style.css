@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -235,6 +237,17 @@ header nav {
     background-color: var(--bg-color);
 }
 
+@media(max-width: 1284px) {
+    header nav {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-order {
+        margin-top: 15px;
+    }
+}
+
 header .nav-links {
     display: flex;
     align-content: center;
@@ -257,7 +270,7 @@ header .nav-links a {
 }
 
 header .nav-links a:hover {
-    color: var(--text-2-color);
+    color: var(--icon-color);
 }
 
 header .nav-order input {
@@ -294,3 +307,17 @@ header .nav-order .bell::after {
 
 
 /* =========== end navgation bar =========== */
+
+
+
+
+.show-start .contect-box img {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    border-radius: 4px;
+}
+
+.card-slider {
+    padding: 30px 0;
+}
